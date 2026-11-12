@@ -1,0 +1,9 @@
+br\dev\eloisasantos\dukemarket\javafx\controller\MenuPrincipalController.class
+br\dev\eloisasantos\dukemarket\javafx\PrimaryController.class
+br\dev\eloisasantos\dukemarket\javafx\DAO\ProdutoDAO.class
+module-info.class
+br\dev\eloisasantos\dukemarket\javafx\ScrProdutosController.class
+br\dev\eloisasantos\dukemarket\javafx\model\Produto.class
+br\dev\eloisasantos\dukemarket\javafx\SecondaryController.class
+connection\MySQLConnection.class
+br\dev\eloisasantos\dukemarket\javafx\App.class
