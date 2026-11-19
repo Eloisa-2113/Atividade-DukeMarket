@@ -1,4 +1,4 @@
-package br.dev.eloisasantos.dukemarket.javafx;
+package br.dev.eloisasantos.dukemarket.javafx.controller;
 
 import br.dev.eloisasantos.dukemarket.javafx.DAO.ProdutoDAO;
 import br.dev.eloisasantos.dukemarket.javafx.model.Produto;

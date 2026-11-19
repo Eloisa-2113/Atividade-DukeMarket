@@ -23,10 +23,12 @@ public class MenuPrincipalController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        
-    }    
-    
+
+    }
+
     public void btnProdutosClick() throws IOException {
+
+        System.out.println("\n\n\nProdutosClick acionado!\n\n");
         
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
@@ -37,77 +39,41 @@ public class MenuPrincipalController implements Initializable {
              */
             Scene scene = new Scene(fxmlLoader.load(), 900, 400);
             Stage stage = new Stage();
-            
+
             stage.setTitle("CRUD Produtos");
             stage.setScene(scene);
             stage.show();
-            
+
         } catch (IOException e) {
             Logger logger = Logger.getLogger(getClass().getName());
             logger.log(Level.SEVERE, "Failed to create new Window scrProdutos.", e);
         }
-        
+
     }
+
+    public void btnClienteClick() throws IOException {
+
+        System.out.println("\n\n\nbtnClickAcionado!!!\n\n\n");
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(App.class.getResource("scrCliente.fxml"));
+            /*
+             * if "fx:controller" is not set in fxml
+             * fxmlLoader.setController(NewWindowController);
+             */
+
+            Scene scene = new Scene(fxmlLoader.load(), 900, 400);
+            Stage stage = new Stage();
+
+            stage.setTitle("CRUD Cliente");
+            stage.setScene(scene);
+            stage.show();
+
+        } catch (IOException e) {
+            Logger logger = Logger.getLogger(getClass().getName());
+            logger.log(Level.SEVERE, "Failed to create new Window scrCliente.", e);
+        }
+
+    }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
